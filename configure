@@ -4,6 +4,7 @@ GOPATH=$PWD/
 
 echo "Installing dependencies ..."
 
+rm -rf pkg src
 go get "github.com/broady/gogeohash"
 go get "github.com/gnagel/go-geohash"
 
