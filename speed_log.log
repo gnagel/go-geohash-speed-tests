@@ -1,0 +1,6 @@
+[encode                        ][go-geohash  ]	 MS Per/Call 0.0010 (ms)	 Total for 1000000 Calls = 995.000000 (ms)
+[encode                        ][go-geohash  ]	 MS Per/Call 0.0025 (ms)	 Total for 1000000 Calls = 2460.000000 (ms)
+[decode                        ][go-geohash  ]	 MS Per/Call 0.0014 (ms)	 Total for 1000000 Calls = 1400.000000 (ms)
+[decode                        ][go-geohash  ]	 MS Per/Call 0.0015 (ms)	 Total for 1000000 Calls = 1453.000000 (ms)
+[decode_bbox                   ][go-geohash  ]	 MS Per/Call 0.0014 (ms)	 Total for 1000000 Calls = 1427.000000 (ms)
+[neighbor                      ][go-geohash  ]	 MS Per/Call 0.0014 (ms)	 Total for 1000000 Calls = 1428.000000 (ms)

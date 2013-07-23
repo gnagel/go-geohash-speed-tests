@@ -1,0 +1,12 @@
+#!/bin/sh
+
+GOPATH=$PWD/
+
+echo "Installing dependencies ..."
+
+go get "github.com/broady/gogeohash"
+go get "github.com/gnagel/go-geohash"
+
+rm -rf node-geohash-cpp
+git clone git@github.com:gnagel/node-geohash-cpp.git
+cd node-geohash-cpp ; npm install; npm install -g mocha chai;  node-gyp configure build

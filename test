@@ -1,0 +1,16 @@
+#!/bin/sh
+
+GOPATH=$PWD/
+
+echo "Running Speed Tests ..."
+
+go fmt
+go run go_geohash_profiler.go > $GOPATH/speed_go.log
+
+cd $GOPATH/node-geohash-cpp
+mocha --reporter spec ./tests/speed_spec.js \
+	| grep Total > $GOPATH/speed_node.log
+cd $GOPATH
+
+cat speed_go.log speed_node.log | sort
+rm -f speed_go.log speed_node.log
