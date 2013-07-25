@@ -12,5 +12,7 @@ mocha --reporter spec ./tests/speed_spec.js \
 	| grep Total > $GOPATH/speed_node.log
 cd $GOPATH
 
-cat speed_go.log speed_node.log | sort
+cat speed_go.log speed_node.log | sort > $GOPATH/speed_log.log
 rm -f speed_go.log speed_node.log
+
+cat $GOPATH/speed_log.log
